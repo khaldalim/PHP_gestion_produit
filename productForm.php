@@ -1,5 +1,9 @@
-<script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
-<script>tinymce.init({selector:'textarea'});</script>
+<script src="http://js.nicedit.com/nicEdit-latest.js" type="text/javascript"></script>
+<script type="text/javascript">
+    bkLib.onDomLoaded(function() {
+        new nicEditor({fullPanel : true}).panelInstance('descProd');
+    }); // convert text area with id txt2 to rich text editor with all options.
+</script>
 <?php
 session_start();
 if (isset($_SESSION['user']) && $_SESSION['log'] == 1) {

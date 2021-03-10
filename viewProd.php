@@ -11,7 +11,7 @@ if (isset($_SESSION['user']) && $_SESSION['log'] == 1) {
             ':id' => $_GET['id']
         ]);
         $produit = $statement->fetch(PDO::FETCH_ASSOC);
-       
+
         include 'header.php';
 
 
